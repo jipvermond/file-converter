@@ -39,9 +39,7 @@ class Person extends Human{
 
         $this->_taxnumber = $newNumber;
     }
-    
     public function getTaxnumber(){
         return $this->_taxnumber;
     }
-    
 }
