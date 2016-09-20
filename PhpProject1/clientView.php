@@ -26,4 +26,18 @@ class Person extends Human{
         parent::__construct($gender);
     }
     
+    /**
+     * 
+     * @param type $newNumber
+     * @throws Exception
+     */
+    public function setTaxnumber($newNumber){
+        if (!is_integer($newNumber)) {
+            throw new Exception("Taxnumber should be an integer");
+        }
+
+
+        $this->_taxnumber = $newNumber;
+    }
+    
 }
