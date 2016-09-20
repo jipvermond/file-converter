@@ -1,3 +1,11 @@
+<?php
+
+require_once './clientView.php';
+
+$client = new Person("male", "jip");
+
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -13,6 +21,7 @@ and open the template in the editor.
         <?php
         echo 'hello mars';
         echo 'anyone out there?';
+        echo $client->name;
         ?>
     </body>
 </html>
