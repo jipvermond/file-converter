@@ -25,6 +25,12 @@ class Customer extends Person{
 
 
     }
+    
+    public function setAccountNumber($newNumber){
+        
+        $this->_accountNumber = $newNumber;        
+        
+    }
 
 }
 
