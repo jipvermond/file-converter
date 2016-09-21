@@ -17,6 +17,19 @@ abstract class Human{
     
 }
 
+class Customer extends Person{
+    private $_accountNumber;
+
+    public function getAccountNumber(){
+       return $this->_accountNumber;
+
+
+    }
+
+}
+
+
+
 class Person extends Human{
     private $_taxnumber;
     public $name;
