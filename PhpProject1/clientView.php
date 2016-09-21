@@ -26,6 +26,19 @@ class Customer extends Person{
 
     }
 
+    public function setAccountNumber($newNumber){
+	
+	if (! is_int($newNumber)){
+	   throw new InvalidArgumentException("account number should be an int");
+	   }
+
+	
+	$this->_accountNumber = $newNumber;
+
+    }
+
+
+
 }
 
 
